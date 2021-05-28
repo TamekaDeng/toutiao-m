@@ -1,32 +1,17 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <h1>头条新闻</h1>
+    <!-- 路由的出口：被匹配到到的路由，就会渲染到这个位置 -->
     <router-view/>
   </div>
 </template>
-
+// 这个不是必须的但是建议补全
+<script>
+export default {
+  // 组件名，作用方便在浏览器的调试工具里通过名字来搜索到这个组件
+  name: 'App'
+}
+</script>
 <style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+// 默认事例的样式
 </style>
